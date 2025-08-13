@@ -1,0 +1,48 @@
+.sidebarContainer{
+    width: 20%;
+    height: 100vh;
+    background-color: white;
+}
+
+.sidebarTitleContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap: 15px;
+    border-left: 3px solid #A78BFA;
+    border-top: 1px solid rgb(195, 195, 195);
+    border-right: 1px solid rgb(195, 195, 195);
+    border-bottom: 1px solid rgb(195, 195, 195);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+
+}
+.sidebarTitleContainer  p {
+    color: black;
+}
+.navContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.selectedLinkTo{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #3F3F46;
+}
+
+.selectedLinkTo:hover{
+    background-color: #F5F3FF;
+
+}
+
+.linkTo{
+    background-color: #F5F3FF;
+}
