@@ -3,7 +3,7 @@ import { SearchIcon, PlusIcon} from 'lucide-react'
 import styles from './home.module.scss'
 import { SidebarMock } from '../../mock/sidebar'
 import { Suspense, useState,  } from 'react'
-import { Card } from '../../components/card/card' 
+import { Card } from '../../components/card/Card'
 import { FilterStatus } from '../../components/filter/FilterStatus'
 import { LayoutFilter } from '../../components/displayLayout/LayoutFilter'
 
