@@ -3,10 +3,13 @@
     color: white;
     display: flex;
     flex-direction: row;
+    height: 100vh;
 
 }
 .homeDashboardContainer{
     width: 100%;
+    max-height: 100vh;
+    overflow-y:scroll;
 }
 .homeDashboardHead{
     background-color: white;
@@ -75,21 +78,6 @@
 
 }
 
-.filterDisplayView{
-    display: flex;
-    width: 105px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    border-radius: 5px;
-    border: 1px solid #E4E4E7;
-    color: #09090B;
-    background-color: white;
-    padding: 5px;
-    cursor: pointer;
-}
-
 .filterCategory{
     display: flex;
     width: 105px;
@@ -105,23 +93,7 @@
     cursor: pointer;
 }
 
-.valuesFilterhidden{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    height: 0px;
-    width: 100%;
-    transition: 0.5s ease-out;
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
-    gap: 5px;
-    border: none;
-    cursor: pointer;
-    color: black;
-    overflow: hidden;
-    background-color: white;
 
-}
 
 .valueFilterBlock{
     position: absolute;
@@ -145,88 +117,13 @@
     position: relative;
 }
 
-.valueFilterBlock button {
-    padding: 1px;
+
+
+.test{
+    flex: auto;
     background-color: white;
-    border: none;
 }
 
-.valuesFilterhidden button{
-    padding: 1px;
-    background-color: white;
-    border: none;
-}
-
-.valueFilterBlock button:hover {
-    background-color: #E4E4E7;
-    
-}
-
-.valueDisplayCardContainer{
-position: relative;
-}
-
-.valueDisplayCardBlock{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    height: 60px;
-    width: 100%;
-    transition: 0.5s ease-in;
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
-    gap: 5px;
-    cursor: pointer;
-    border: 1px solid #E4E4E7;
+.loadingText{
     color: black;
-    overflow: hidden;
-    background-color: white;
-
-}
-
-.valueDisplayCardHidden{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    height: 0px;
-    width: 100%;
-    transition: 0.5s ease-out;
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
-    gap: 5px;
-    border: none;
-    cursor: pointer;
-    color: black;
-    overflow: hidden;
-    background-color: white;
-
-
-}
-
-.valueDisplayCardBlock button{
-    padding: 1px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 5px;
-}
-
-.valueDisplayCardHidden button {
-        padding: 1px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 5px;
-}
-
-.valueDisplayCardBlock button:hover{
-    background-color: #E4E4E7;
 }

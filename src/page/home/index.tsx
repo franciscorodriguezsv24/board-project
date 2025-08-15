@@ -1,16 +1,13 @@
 import { Sidebar } from '../../components/sidebar'
-import { SearchIcon, PlusIcon, Settings2, ListFilter, Rows3, Grid2X2} from 'lucide-react'
+import { SearchIcon, PlusIcon} from 'lucide-react'
 import styles from './home.module.scss'
 import { SidebarMock } from '../../mock/sidebar'
-import { useState } from 'react'
+import { Suspense,  } from 'react'
 import { Card } from '../../components/card'
+import { FilterStatus } from '../../components/filter/FilterStatus'
+import { LayoutFilter } from '../../components/displayLayout/LayoutFilter'
 
-export const Home = () => {
-
-  const [value, setValue] = useState('')
-  const [viewType, setViewType] = useState('')
-  const [isFilter, setIsFilter] = useState(false)
-  const [view, setView] = useState(false)
+export function Home() {
 
   return (
     <div className={styles.homeContainer}>
@@ -29,36 +26,19 @@ export const Home = () => {
             </div>
           </div>
           <div className={styles.filtersContainer}>
-            <div className={styles.filterSelectContainer}>
-              <button className={styles.filterCategory} onClick={() => setIsFilter(!isFilter)}>
-                <ListFilter/>
-                {
-                  value || 'filter'
-                }
-              </button>
-              <div className={ isFilter ? styles.valueFilterBlock : styles.valuesFilterhidden}>
-                <button onClick={() => {setValue('Active'); setIsFilter(!isFilter)}}>Active</button>
-                <button onClick={() => {setValue('Prospective'); setIsFilter(!isFilter)}}>Prospective</button>
-                <button onClick={() => {setValue('Archived'); setIsFilter(!isFilter)}}>Archived</button>
-              </div>
-            </div>
-
-            <div className={styles.valueDisplayCardContainer}>
-              <button className={styles.filterDisplayView} onClick={() => setView(!view)}>     <Settings2/>
-                  {
-                    viewType || 'Display'
-                  }
-              </button>
-              <div className={view ? styles.valueDisplayCardBlock : styles.valueDisplayCardHidden}>
-                <button onClick={() => {setViewType('Row'); setIsFilter(!isFilter)}}><Rows3/>Row</button>
-                <button onClick={() => {setViewType('Grid'); setIsFilter(!isFilter)}}><Grid2X2/>Grid</button>
-              </div>
-            </div>
+            <FilterStatus/>
+            <LayoutFilter/>
           </div>
-          <div className={styles.cardsContianer}>
-            <Card/>
+          <div className={styles.test}>
+            <Suspense fallback={<FallBack/>}>
+              <Card/>
+            </Suspense>
           </div>
         </div>
     </div>
   )
+}
+
+const FallBack = () => {
+  return <p className={styles.loadingText}>loading...</p>
 }
