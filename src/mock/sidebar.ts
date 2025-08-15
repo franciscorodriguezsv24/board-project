@@ -1,50 +1,49 @@
 
-
 export interface SidebarType {
     label: string
-    icon: string
     link: string
+    iconName: string
 }
 
 export const SidebarMock: SidebarType[] = [
     {
         label: "TimeLine",
-        icon: '/icons/timeline.svg',
-        link: '/'
+        link: '#',
+        iconName: 'timeline'
     },
     {
         label: "Dashboard",
-        icon: '/icons/dashboard.svg',
-        link: '/'
+        link: '#',
+        iconName: 'dashboard'
     },
     {
         label: "Clients",
-        icon: '/icons/clients.svg',
-        link: '/'
+        link: '/',
+        iconName: 'clients'
     },
     {
         label: "Projects",
-        icon: '/icons/projects.svg',
-        link: '/'
+        link: '#',
+        iconName: 'projects'
     },
     {
         label: "Assigments",
-        icon: '/icons/assigments.svg',
-        link: '/'
+        link: '#',
+        iconName: 'clients'
     },
     {
         label: "Team Members",
-        icon: '/icons/teamMembers.svg',
-        link: '/'
+        link: '#',
+        iconName: 'teamMember'
     },
     {
         label: "Team",
-        icon: '/icons/team.svg',
-        link: '/'
+        link: '#',
+        iconName: 'team'
     },
     {
         label: "Groups",
-        icon: '/icons/groups.svg',
-        link: '/'
+        link: '#',
+        iconName: 'groups'
     }
 ]

@@ -1,24 +1,63 @@
 .sidebarContainer{
-    width: 20%;
+    width: 16rem;
     height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgb(195, 195, 195);
+
+}
+
+.sidebarContainerDynamic{
+    position: absolute;
+    width: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    color: transparent;
+    transition: 0.1s ease-out;
+    z-index: 1;
+    border-right: 1px solid rgb(195, 195, 195);
+    overflow: hidden;
+    background-color: white;
+
+
+
+}
+.sidebarContainerDynamic:hover{
+    width: 14rem;
+    transition: 0.1s ease-in;
     background-color: white;
 }
 
 .sidebarTitleContainer{
     display: flex;
     flex-direction: row;
-    padding: 15px;
+    padding: 9px;
+    height: 32px;
     gap: 15px;
     border-left: 3px solid #A78BFA;
     border-top: 1px solid rgb(195, 195, 195);
-    border-right: 1px solid rgb(195, 195, 195);
     border-bottom: 1px solid rgb(195, 195, 195);
     font-family: "Inter", sans-serif;
     font-size: 16px;
 
 }
-.sidebarTitleContainer  p {
-    color: black;
+
+.sidebarTitle{
+    color:#7C3AED;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+}
+
+.sidebarTitleP{
+    font-size: 14px;
 }
 .navContainer{
     display: flex;
@@ -40,9 +79,69 @@
 
 .selectedLinkTo:hover{
     background-color: #F5F3FF;
+    color: #7C3AED
 
 }
 
 .linkTo{
     background-color: #F5F3FF;
+    color: #7C3AED;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+
+}
+
+.sidebarFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    color: #3F3F46;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid rgb(195, 195, 195);
+    
+}
+
+.imgSidebar{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: 100% 20%;
+}
+
+.sidebarP{
+        font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+.titleButton{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    border: none;
+    color: transparent;
+    
+}
+
+.titleButton:hover{
+    cursor: pointer;
+    color: #3F3F46;
+    transition:0.5s ease-out;
+
 }
