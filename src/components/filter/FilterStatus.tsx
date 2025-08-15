@@ -3,10 +3,9 @@ import { useState } from 'react';
 import styles from './filter.module.scss'
 import { ListFilter } from 'lucide-react';
 
-export const FilterStatus = () => {
+export const FilterStatus = ({ setValue, value }: { setValue: React.Dispatch<React.SetStateAction<string>>, value: string }) => {
 
     const [isFilter, setIsFilter] = useState(false)
-    const [value, setValue] = useState('')
 
 
   return (

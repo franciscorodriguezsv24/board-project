@@ -8,12 +8,12 @@ export interface SidebarType {
 export const SidebarMock: SidebarType[] = [
     {
         label: "TimeLine",
-        link: '/',
+        link: '#',
         iconName: 'timeline'
     },
     {
         label: "Dashboard",
-        link: '/',
+        link: '#',
         iconName: 'dashboard'
     },
     {
@@ -23,27 +23,27 @@ export const SidebarMock: SidebarType[] = [
     },
     {
         label: "Projects",
-        link: '/',
+        link: '#',
         iconName: 'projects'
     },
     {
         label: "Assigments",
-        link: '/',
+        link: '#',
         iconName: 'clients'
     },
     {
         label: "Team Members",
-        link: '/',
+        link: '#',
         iconName: 'teamMember'
     },
     {
         label: "Team",
-        link: '/',
+        link: '#',
         iconName: 'team'
     },
     {
         label: "Groups",
-        link: '/',
+        link: '#',
         iconName: 'groups'
     }
 ]

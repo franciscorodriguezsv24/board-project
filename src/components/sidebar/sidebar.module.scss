@@ -1,5 +1,5 @@
 .sidebarContainer{
-    width: 15%;
+    width: 16rem;
     height: 100vh;
     background-color: white;
     display: flex;
@@ -7,6 +7,29 @@
     justify-content: space-between;
     border-right: 1px solid rgb(195, 195, 195);
 
+}
+
+.sidebarContainerDynamic{
+    position: absolute;
+    width: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    color: transparent;
+    transition: 0.1s ease-out;
+    z-index: 1;
+    border-right: 1px solid rgb(195, 195, 195);
+    overflow: hidden;
+    background-color: white;
+
+
+
+}
+.sidebarContainerDynamic:hover{
+    width: 14rem;
+    transition: 0.1s ease-in;
+    background-color: white;
 }
 
 .sidebarTitleContainer{
@@ -63,6 +86,15 @@
 .linkTo{
     background-color: #F5F3FF;
     color: #7C3AED;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
 
 }
 

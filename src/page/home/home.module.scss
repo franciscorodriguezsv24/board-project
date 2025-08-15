@@ -1,26 +1,29 @@
 .homeContainer{
+    position: relative;
     background-color: white;
     color: white;
     display: flex;
     flex-direction: row;
     height: 100vh;
-
 }
 .homeDashboardContainer{
     width: 100%;
     max-height: 100vh;
-    overflow-y:scroll;
+    display: flex;
+    flex-direction: column;
 }
+
 .homeDashboardHead{
     background-color: white;
-    height: 30px;
+    padding: 9px;
+    height: 32px;
+    flex:0 0 auto;
     color: #09090B;
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     font-size: 12px;
     font-family: "Inter", sans-serif;
     border-top: 1px solid rgb(195, 195, 195);
@@ -70,10 +73,17 @@
 
 .filtersContainer{
     display: flex;
+    flex: 0 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    height: 5vh;
     border-bottom: 1px solid rgb(195, 195, 195);
+    margin: none;
 
 
 }
@@ -117,13 +127,30 @@
     position: relative;
 }
 
+.CardsContainer {
+  overflow-y: scroll;
+  flex: 1 1 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
 
-
-.test{
-    flex: auto;
-    background-color: white;
+.CardsLayout {
+  overflow-y: scroll;
+  flex: 1 1 auto;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-auto-rows: 60px;
+  gap: 1rem;
+  padding:20px;
 }
 
 .loadingText{
     color: black;
+}
+.footerContainer{
+    border-top: 1px solid rgb(195, 195, 195);
+    height: 54px;
+    flex: 0 0 auto;
 }

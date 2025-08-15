@@ -1,11 +1,9 @@
 .cardContainer{
-    // background-color: white;
     display: flex;
     flex-direction: row; 
     width: auto;
     align-items: stretch;
     padding: 9px;
-    // height: auto;
     gap: 10px;
     color: black;
     border-bottom: 1px solid rgb(195, 195, 195);
@@ -13,8 +11,35 @@
     font-family: "Inter", sans-serif;
 }
 
+.cardGridContainer{
+    display: flex;
+    flex-direction: row; 
+    width: auto;
+    align-items: stretch;
+    padding: 9px;
+    gap: 10px;
+    color: black;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+
+.archiveCard{
+    background-color: #F4F4F5;
+}
+
+.normalCard{
+    background-color: white;
+}
 .cardImg{
     object-fit:cover;
+}
+
+.disableImg{
+    filter: grayscale(1);
+    object-fit:cover;
+
 }
 
 .CardImgContainer{
