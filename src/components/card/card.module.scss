@@ -1,81 +1,79 @@
-.cardContainer{
-    display: flex;
-    flex-direction: row; 
-    width: auto;
-    align-items: stretch;
-    padding: 9px;
-    gap: 10px;
-    color: black;
-    border-bottom: 1px solid rgb(195, 195, 195);
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: stretch;
+  padding: 9px;
+  gap: 10px;
+  color: black;
+  border-bottom: 1px solid rgb(195, 195, 195);
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
 }
 
-.cardGridContainer{
-    display: flex;
-    flex-direction: row; 
-    width: auto;
-    align-items: stretch;
-    padding: 9px;
-    gap: 10px;
-    color: black;
-    border: 1px solid rgb(195, 195, 195);
-    border-radius: 5px;
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
+.cardGridContainer {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: stretch;
+  padding: 9px;
+  gap: 10px;
+  color: black;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
 }
 
-.archiveCard{
-    background-color: #F4F4F5;
+.archiveCard {
+  background-color: #f4f4f5;
 }
 
-.normalCard{
-    background-color: white;
+.normalCard {
+  background-color: white;
 }
-.cardImg{
-    object-fit:cover;
-}
-
-.disableImg{
-    filter: grayscale(1);
-    object-fit:cover;
-
+.cardImg {
+  object-fit: cover;
 }
 
-.CardImgContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.disableImg {
+  filter: grayscale(1);
+  object-fit: cover;
 }
 
-.cardTextContainer{
-    padding-top: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+.CardImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.statusContainer{
-    padding-top: 2px;
-
+.cardTextContainer {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
-.statusTextActive{
-    background-color: #DCFCE7;
-    color: #16A34A;
-    padding: 3px 6px;
-    border-radius: 10px;
+.statusContainer {
+  padding-top: 2px;
 }
 
-.statusTextProspective{
-    background-color: #FFEDD5;
-    color: #EA580C;
-    padding: 3px 6px;
-    border-radius: 10px;
+.statusTextActive {
+  background-color: #dcfce7;
+  color: #16a34a;
+  padding: 3px 6px;
+  border-radius: 10px;
 }
 
-.statusTextArchived{
-    color: #52525B;
-    padding: 3px 6px;
-    border-radius: 10px;
+.statusTextProspective {
+  background-color: #ffedd5;
+  color: #ea580c;
+  padding: 3px 6px;
+  border-radius: 10px;
+}
+
+.statusTextArchived {
+  color: #52525b;
+  padding: 3px 6px;
+  border-radius: 10px;
 }
