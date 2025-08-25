@@ -2,10 +2,13 @@ import { useState } from "react";
 import styles from "./layoutDisplay.module.scss";
 import { Grid2X2, Rows3, Settings2 } from "lucide-react";
 
-type FilterStatusProps = [string, React.Dispatch<React.SetStateAction<string>>];
+type FilterStatusProps = {
+  filterLayout: [string, React.Dispatch<React.SetStateAction<string>>];
+};
 
-export const LayoutFilter = ([layoutWay, setLayoutWay]: FilterStatusProps) => {
+export const LayoutFilter = ({ filterLayout }: FilterStatusProps) => {
   const [view, setView] = useState(false);
+  const [layoutWay, setLayoutWay] = filterLayout;
 
   return (
     <div className={styles.valueDisplayCardContainer}>

@@ -37,8 +37,8 @@ export function Home() {
           </div>
         </div>
         <div className={styles.filtersContainer}>
-          <FilterStatus {...filterValue} />
-          <LayoutFilter {...layoutWay} />
+          <FilterStatus filterValue={filterValue} />
+          <LayoutFilter filterLayout={layoutWay} />
         </div>
         <div
           className={clsx(

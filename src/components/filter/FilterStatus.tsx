@@ -2,11 +2,13 @@ import { useState } from "react";
 import styles from "./filter.module.scss";
 import { ListFilter } from "lucide-react";
 
-type FilterStatusProps = [string, React.Dispatch<React.SetStateAction<string>>];
+type FilterStatusProps = {
+  filterValue: [string, React.Dispatch<React.SetStateAction<string>>];
+};
 
-export const FilterStatus = ([value, setValue]: FilterStatusProps) => {
+export const FilterStatus = ({ filterValue }: FilterStatusProps) => {
   const [isFilter, setIsFilter] = useState(false);
-
+  const [value, setValue] = filterValue;
   return (
     <div className={styles.filterSelectContainer}>
       <button
