@@ -1,50 +1,48 @@
-
-
 export interface SidebarType {
-    label: string
-    icon: string
-    link: string
+  label: string;
+  link: string;
+  iconName: string;
 }
 
 export const SidebarMock: SidebarType[] = [
-    {
-        label: "TimeLine",
-        icon: '/icons/timeline.svg',
-        link: '/'
-    },
-    {
-        label: "Dashboard",
-        icon: '/icons/dashboard.svg',
-        link: '/'
-    },
-    {
-        label: "Clients",
-        icon: '/icons/clients.svg',
-        link: '/'
-    },
-    {
-        label: "Projects",
-        icon: '/icons/projects.svg',
-        link: '/'
-    },
-    {
-        label: "Assigments",
-        icon: '/icons/assigments.svg',
-        link: '/'
-    },
-    {
-        label: "Team Members",
-        icon: '/icons/teamMembers.svg',
-        link: '/'
-    },
-    {
-        label: "Team",
-        icon: '/icons/team.svg',
-        link: '/'
-    },
-    {
-        label: "Groups",
-        icon: '/icons/groups.svg',
-        link: '/'
-    }
-]
+  {
+    label: "TimeLine",
+    link: "#",
+    iconName: "timeline",
+  },
+  {
+    label: "Dashboard",
+    link: "#",
+    iconName: "dashboard",
+  },
+  {
+    label: "Clients",
+    link: "/",
+    iconName: "clients",
+  },
+  {
+    label: "Projects",
+    link: "#",
+    iconName: "projects",
+  },
+  {
+    label: "Assigments",
+    link: "#",
+    iconName: "clients",
+  },
+  {
+    label: "Team Members",
+    link: "#",
+    iconName: "teamMember",
+  },
+  {
+    label: "Team",
+    link: "#",
+    iconName: "team",
+  },
+  {
+    label: "Groups",
+    link: "#",
+    iconName: "groups",
+  },
+];

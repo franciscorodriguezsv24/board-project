@@ -1,13 +1,12 @@
-import styles from './App.module.scss'
-import { Home } from './page/home'
+import styles from "./App.module.scss";
+import { Home } from "./page/home/Home";
 
 function App() {
-
   return (
     <div className={styles.firstSass}>
-        <Home/>
+      <Home />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
